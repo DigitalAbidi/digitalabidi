@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Abidi | Social Media Growth for Local Businesses</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #1C1C1E;
+      color: #F4F4F4;
+    }
+    header {
+      background: #1C1C1E;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #333;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+      color: #FF914D;
+    }
+    .hero {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin: auto;
+    }
+    .cta {
+      margin-top: 40px;
+    }
+    .cta button {
+      background: #FF914D;
+      border: none;
+      color: #1C1C1E;
+      padding: 15px 30px;
+      font-size: 1em;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .features, .packages {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 60px 20px;
+      background: #2B2B2E;
+    }
+    .feature, .package {
+      max-width: 300px;
+      text-align: center;
+    }
+    .feature h3, .package h3 {
+      color: #FF914D;
+    }
+    .contact-section {
+      padding: 60px 20px;
+      background: #1C1C1E;
+      text-align: center;
+    }
+    .contact-section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    form {
+      max-width: 400px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    input, textarea, select {
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+    }
+    button.submit {
+      background-color: #FF914D;
+      color: #1C1C1E;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .social-buttons {
+      margin-top: 30px;
+    }
+    .social-buttons a {
+      background: #FF914D;
+      color: #1C1C1E;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 6px;
+      display: inline-block;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      background: #1C1C1E;
+      border-top: 1px solid #333;
+    }
+    .lang-switch {
+      margin-top: 10px;
+    }
+    .lang-switch button {
+      background: transparent;
+      border: 1px solid #FF914D;
+      color: #FF914D;
+      margin: 0 5px;
+      padding: 5px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Digital Abidi</h1>
+    <div class="lang-switch">
+      <button onclick="switchLang('en')">EN</button>
+      <button onclick="switchLang('pl')">PL</button>
+    </div>
+  </header>
+  <div class="hero" id="hero">
+    <h2 id="headline">We Help Businesses Grow on Social Media</h2>
+    <p id="subtext">
+      Get consistent, high-quality content for your Instagram & Facebook — all powered by AI.
+    </p>
+    <div class="cta">
+      <button onclick="alert('We will contact you with 3 free sample posts!')">Get 3 Free Posts</button>
+    </div>
+  </div>
+  <section class="features">
+    <div class="feature">
+      <h3 id="f1">Consistent Posting</h3>
+      <p id="f1txt">We create 30 days of content in advance, so you never miss a day.</p>
+    </div>
+    <div class="feature">
+      <h3 id="f2">Engaging Captions</h3>
+      <p id="f2txt">Every post includes catchy, brand-specific text to draw customers in.</p>
+    </div>
+    <div class="feature">
+      <h3 id="f3">AI-Powered Design</h3>
+      <p id="f3txt">Stand out with unique, AI-generated visuals that match your vibe.</p>
+    </div>
+  </section>
+  <section class="packages">
+    <div class="package">
+      <h3>Starter Plan</h3>
+      <p>15 posts per month + captions + AI visuals — perfect for small businesses.</p>
+    </div>
+    <div class="package">
+      <h3>Growth Plan</h3>
+      <p>30 posts per month, fully managed content — save time and grow faster.</p>
+    </div>
+    <div class="package">
+      <h3>Pro Plan</h3>
+      <p>Custom strategy + analytics reports + content scheduling support.</p>
+    </div>
+  </section>
+  <section class="contact-section">
+    <h2>Register for Free Sample Posts</h2>
+    <form action="https://formspree.io/f/xqapvoze" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <select name="businessType" required>
+        <option value="" disabled selected>Select Business Type</option>
+        <option value="restaurant">Restaurant</option>
+        <option value="beauty">Salon / Beauty</option>
+        <option value="retail">Retail Store</option>
+        <option value="other">Other</option>
+      </select>
+      <input type="hidden" name="message" value="New user registration for sample posts." />
+      <input type="hidden" name="_next" value="https://digitalabidi.com/thankyou.html" />
+      <button class="submit" type="submit">Get My Free Posts</button>
+    </form>
+    <div class="social-buttons">
+      <a href="https://wa.me/48792095299" target="_blank">Chat on WhatsApp</a>
+      <a href="https://instagram.com/digitalabidi" target="_blank">DM on Instagram</a>
+    </div>
+  </section>
+  <footer>
+    &copy; 2025 Digital Abidi. Built with 💛
+  </footer>
+  <script>
+    const translations = {
+      en: {
+        headline: "We Help Businesses Grow on Social Media",
+        subtext: "Get consistent, high-quality content for your Instagram & Facebook — all powered by AI.",
+        f1: "Consistent Posting",
+        f1txt: "We create 30 days of content in advance, so you never miss a day.",
+        f2: "Engaging Captions",
+        f2txt: "Every post includes catchy, brand-specific text to draw customers in.",
+        f3: "AI-Powered Design",
+        f3txt: "Stand out with unique, AI-generated visuals that match your vibe."
+      },
+      pl: {
+        headline: "Pomagamy restauracjom i salonom rosnąć w mediach społecznościowych",
+        subtext: "Otrzymuj spójne, wysokiej jakości treści na Instagram i Facebook — wszystko napędzane przez AI.",
+        f1: "Regularne posty",
+        f1txt: "Tworzymy 30 dni treści z wyprzedzeniem, więc nigdy niczego nie przegapisz.",
+        f2: "Chwytliwe podpisy",
+        f2txt: "Każdy post zawiera chwytliwy tekst, który przyciąga klientów.",
+        f3: "Projektowanie przez AI",
+        f3txt: "Wyróżnij się unikalnymi grafikami generowanymi przez AI, które pasują do Twojego stylu."
+      }
+    };
+
+    function switchLang(lang) {
+      document.getElementById("headline").textContent = translations[lang].headline;
+      document.getElementById("subtext").textContent = translations[lang].subtext;
+      document.getElementById("f1").textContent = translations[lang].f1;
+      document.getElementById("f1txt").textContent = translations[lang].f1txt;
+      document.getElementById("f2").textContent = translations[lang].f2;
+      document.getElementById("f2txt").textContent = translations[lang].f2txt;
+      document.getElementById("f3").textContent = translations[lang].f3;
+      document.getElementById("f3txt").textContent = translations[lang].f3txt;
+    }
+  </script>
+</body>
+</html>
